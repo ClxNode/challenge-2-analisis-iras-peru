@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 400" width="580" height="400">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1F3F"/><stop offset="1" stop-color="#2E6DB4"/></linearGradient></defs>
+<rect width="580" height="400" fill="url(#g)"/>
+<text x="36" y="110" font-family="Segoe UI, Arial, sans-serif" font-size="96" font-weight="700" fill="#FFFFFF" fill-opacity=".14">01</text>
+<circle cx="400" cy="170" r="120" fill="none" stroke="#9DC3E6" stroke-opacity="0.25" stroke-width="3"/><circle cx="400" cy="170" r="88" fill="none" stroke="#9DC3E6" stroke-opacity="0.45" stroke-width="3"/><circle cx="400" cy="170" r="56" fill="none" stroke="#9DC3E6" stroke-opacity="0.7" stroke-width="3"/><circle cx="400" cy="82" r="9" fill="#FFFFFF"/><circle cx="400" cy="170" r="10" fill="#9DC3E6"/>
+<text x="36" y="356" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="600" fill="#FFFFFF">Inicio</text>
+<text x="36" y="382" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#CFE0F1">IRAs · UPCH</text>
+</svg>

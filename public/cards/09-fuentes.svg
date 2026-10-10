@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 400" width="580" height="400">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1F3F"/><stop offset="1" stop-color="#2E6DB4"/></linearGradient></defs>
+<rect width="580" height="400" fill="url(#g)"/>
+<text x="36" y="110" font-family="Segoe UI, Arial, sans-serif" font-size="96" font-weight="700" fill="#FFFFFF" fill-opacity=".14">09</text>
+<rect x="340" y="80" width="150" height="190" rx="10" fill="none" stroke="#FFFFFF" stroke-width="6"/><line x1="362" y1="120" x2="468" y2="120" stroke="#9DC3E6" stroke-width="7" stroke-linecap="round"/><line x1="362" y1="150" x2="448" y2="150" stroke="#9DC3E6" stroke-width="7" stroke-linecap="round"/><line x1="362" y1="180" x2="468" y2="180" stroke="#9DC3E6" stroke-width="7" stroke-linecap="round"/><line x1="362" y1="210" x2="430" y2="210" stroke="#9DC3E6" stroke-width="7" stroke-linecap="round"/><line x1="362" y1="240" x2="458" y2="240" stroke="#9DC3E6" stroke-width="7" stroke-linecap="round"/>
+<text x="36" y="356" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="600" fill="#FFFFFF">Fuentes</text>
+<text x="36" y="382" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#CFE0F1">IRAs · UPCH</text>
+</svg>
