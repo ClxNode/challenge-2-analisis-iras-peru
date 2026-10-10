@@ -40,7 +40,7 @@ Los costos utilizados por A* son didácticos y no representan costos sanitarios 
 
 ## ▶️ Cómo ejecutar
 
-**Notebook:** abrir el archivo `.ipynb` en [Google Colab](https://colab.research.google.com/) y seleccionar **Entorno de ejecución → Ejecutar todas**.
+**Notebook:** abrir el archivo `.ipynb` en [Google Colab](https://drive.google.com/file/d/1-4engxnSvRuyiOzl_RCPbHVmmpszVMm9/view?usp=sharing) y seleccionar **Entorno de ejecución → Ejecutar todas**.
 
 **Página web (React/Vite):**
 ```bash
@@ -49,7 +49,7 @@ npm run dev
 ```
 Abrir en el navegador la URL local que indique la terminal.
 
-**Sitio publicado:** [Ver presentación en GitHub Pages](https://clxnode.github.io/challenge-1-analisis-iras-peru/)
+**Sitio publicado:** [Ver presentación en GitHub Pages](https://clxnode.github.io/challenge-2-analisis-iras-peru/)
 
 ## 📚 Referencias
 
