@@ -1,3 +1,5 @@
+
+
 <p align="center">
   <img
     src="https://capsule-render.vercel.app/api?type=venom&color=0:071A36,35:124B8A,70:167DAD,100:42D6D0&height=245&section=header&text=IRAs%20PER%C3%9A&fontSize=68&fontColor=FFFFFF&animation=fadeIn&fontAlignY=42&desc=DATA%20%2F%20SEARCH%20%2F%20MACHINE%20LEARNING&descSize=14&descAlignY=63"
@@ -29,20 +31,17 @@
 
 ## 🧭 Navegación
 
-<div align="center">
+- [Sobre el proyecto](#-sobre-el-proyecto)
+- [El problema y los datos](#-el-problema)
+- [Objetivos](#-objetivos)
+- [Espacio de estados y búsqueda](#-espacio-de-estados)
+- [Regresión lineal](#-demostración-de-regresión-lineal)
+- [Herramientas](#-herramientas-utilizadas)
+- [Conclusiones y limitaciones](#-conclusiones-y-limitaciones)
+- [Cómo ejecutar](#-cómo-ejecutar)
+- [Referencias](#-referencias)
 
-| **01 · Proyecto** | **02 · Métodos** | **03 · Resultados** |
-|:---:|:---:|:---:|
-| [Sobre el proyecto](#sobre-el-proyecto) | [Espacio de estados](#espacio-de-estados) | [Datos en números](#el-caso-en-números) |
-| [El problema](#el-problema) | [Algoritmos de búsqueda](#algoritmos-de-búsqueda) | [Conclusiones](#conclusiones-y-limitaciones) |
-| [Objetivos](#objetivos) | [Regresión lineal](#demostración-de-regresión-lineal) | [Referencias](#referencias) |
-| [Herramientas](#herramientas-utilizadas) | [Cómo ejecutar](#cómo-ejecutar) | [Web publicada](#acceso-al-proyecto) |
-
-</div>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:071A36,50:167DAD,100:42D6D0&height=3&section=header" width="100%" alt="Separador azul"/>
-</p>
+---
 
 # 🔷 Sobre el proyecto
 
@@ -72,7 +71,7 @@ La pregunta que orienta el trabajo es:
 
 ---
 
-# 🩺 El problema
+## 🩺 El problema
 
 Las Infecciones Respiratorias Agudas en menores de cinco años son el tema de análisis del proyecto. Se comparan los episodios de IRA y las defunciones por neumonía reportadas en la infografía proporcionada para los años 2023, 2024 y 2025.
 
@@ -101,7 +100,7 @@ flowchart TD
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:071A36,50:167DAD,100:42D6D0&height=3&section=header" width="100%" alt="Separador azul"/>
 </p>
 
-# 📊 El caso en números
+## 📊 El caso en números
 
 <div align="center">
 
@@ -138,7 +137,7 @@ xychart-beta
 
 ---
 
-# 🎯 Objetivos
+## 🎯 Objetivos
 
 <p align="center">
 
@@ -164,7 +163,7 @@ Explorar el caso de las IRAs en menores de cinco años en el Perú mediante visu
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:071A36,50:167DAD,100:42D6D0&height=3&section=header" width="100%" alt="Separador azul"/>
 </p>
 
-# 🕸️ Espacio de estados
+## 🕸️ Espacio de estados
 
 Un espacio de estados representa situaciones posibles y las transiciones permitidas entre ellas. Los algoritmos de búsqueda exploran ese grafo para encontrar un camino hacia un objetivo según las reglas definidas.
 
@@ -195,7 +194,7 @@ El diagrama anterior es **conceptual**. El grafo concreto, sus restricciones y s
 
 ---
 
-# 🔎 Algoritmos de búsqueda
+## 🔎 Algoritmos de búsqueda
 
 El proyecto compara distintas estrategias para explorar el espacio de estados.
 
@@ -219,7 +218,7 @@ Los costos utilizados por A* son **didácticos** y no representan costos sanitar
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:071A36,50:167DAD,100:42D6D0&height=3&section=header" width="100%" alt="Separador azul"/>
 </p>
 
-# 🧠 Demostración de regresión lineal
+## 🧠 Demostración de regresión lineal
 
 La regresión lineal permite ilustrar el flujo fundamental de un modelo supervisado: preparar los datos, entrenar el modelo, generar predicciones y evaluar sus resultados.
 
@@ -250,7 +249,7 @@ flowchart LR
 
 ---
 
-# 🧰 Herramientas utilizadas
+## 🧰 Herramientas utilizadas
 
 <div align="center">
 
@@ -279,7 +278,7 @@ flowchart LR
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:071A36,50:167DAD,100:42D6D0&height=3&section=header" width="100%" alt="Separador azul"/>
 </p>
 
-# 💡 Conclusiones y limitaciones
+## 💡 Conclusiones y limitaciones
 
 - Las cifras de la infografía muestran una disminución de los episodios de IRA y de las defunciones por neumonía entre 2023 y 2025.
 - La comparación descriptiva no permite determinar las causas de los cambios observados.
@@ -296,7 +295,7 @@ flowchart LR
 
 ---
 
-# ▶️ Cómo ejecutar
+## ▶️ Cómo ejecutar
 
 ## Notebook de Google Colab
 
@@ -325,7 +324,7 @@ Abrir en el navegador la dirección local que indique la terminal.
 
 ---
 
-# 📚 Referencias
+## 📚 Referencias
 
 1. Infografía del caso de IRAs proporcionada para el Challenge 1.
 2. Materiales de clase de la UPCH: sesiones 3–7, sobre búsqueda, tipos de aprendizaje y regresión.
