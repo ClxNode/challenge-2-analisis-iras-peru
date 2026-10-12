@@ -145,12 +145,14 @@ Los costos utilizados en el ejercicio son **didácticos** y no representan costo
 
 Los resultados deben obtenerse al ejecutar el notebook. Registra aquí las salidas reales de cada algoritmo; no completes la tabla con valores estimados.
 
-| Algoritmo | Camino encontrado | Costo total | Nodos explorados |
-|:--|:--|--:|--:|
-| BFS | Registrar salida del notebook | — | — |
-| DFS | Registrar salida del notebook | — | — |
-| Fuerza bruta | Registrar salida del notebook | — | — |
-| A* | Registrar salida del notebook | — | — |
+
+| Algoritmo | Camino encontrado | Costo total | Resultado de exploración |
+|:--|:--|--:|:--|
+| BFS | Episodios IRA → Integración → Resumen | 4 | 6 estados explorados |
+| DFS | Episodios IRA → Integración → Resumen | 4 | 4 estados explorados |
+| Fuerza bruta | Evalúa las 3 rutas posibles | 4 (mínimo) | 3 rutas enumeradas |
+| A* | Defunciones → Integración → Resumen | 4 | 4 estados explorados |
+
 
 **Interpretación:** compara los caminos, costos y nodos explorados según las condiciones de tu grafo. No declares un algoritmo como ganador sin considerar los costos, las restricciones y el criterio de comparación.
 
@@ -205,32 +207,20 @@ Añade a esta sección los valores de MAE, RMSE y R² obtenidos en la ejecución
 
 ---
 
-## ▶️ Cómo ejecutar
 
-### Notebook de Google Colab
+## ▶️ Explora el proyecto
 
-1. Abre el [notebook del proyecto](https://drive.google.com/file/d/1-4engxnSvRuyiOzl_RCPbHVmmpszVMm9/view?usp=sharing).
-2. Selecciona **Entorno de ejecución → Ejecutar todas**.
-3. Comprueba las salidas, los gráficos, las métricas y los resultados de búsqueda.
+### 💻 Notebook en Google Colab
 
-### Aplicación web
+Accede al notebook para revisar el código, ejecutar los algoritmos de búsqueda, entrenar el modelo de regresión lineal y analizar los resultados obtenidos.
 
-Desde la carpeta del proyecto, ejecuta:
+[![Abrir en Colab](https://img.shields.io/badge/ABRIR%20NOTEBOOK-Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://drive.google.com/file/d/1-4engxnSvRuyiOzl_RCPbHVmmpszVMm9/view?usp=sharing)
 
-```bash
-npm install
-npm run dev
-```
+### 🌐 Página web del proyecto
 
-Abre en el navegador la dirección local que indique la terminal.
+Visita la página web para conocer con mayor detalle el problema, los objetivos, el espacio de estados, los algoritmos de búsqueda, el modelo predictivo y las conclusiones del proyecto.
 
-### 🌐 Ver presentación web
-
-<div align="center">
-
-[![Abrir presentación](https://img.shields.io/badge/ABRIR%20PRESENTACI%C3%93N-GitHub%20Pages-167DAD?style=for-the-badge&logo=github&logoColor=white)](https://clxnode.github.io/challenge-2-analisis-iras-peru/)
-
-</div>
+[![Ver página web](https://img.shields.io/badge/EXPLORAR%20PROYECTO-GitHub%20Pages-167DAD?style=for-the-badge&logo=github&logoColor=white)](https://clxnode.github.io/challenge-2-analisis-iras-peru/)
 
 ---
 
