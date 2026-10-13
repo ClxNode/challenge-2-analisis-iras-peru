@@ -214,7 +214,7 @@ Añade a esta sección los valores de MAE, RMSE y R² obtenidos en la ejecución
 
 Accede al notebook para revisar el código, ejecutar los algoritmos de búsqueda, entrenar el modelo de regresión lineal y analizar los resultados obtenidos.
 
-[![Abrir en Colab](https://img.shields.io/badge/ABRIR%20NOTEBOOK-Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://drive.google.com/file/d/1-4engxnSvRuyiOzl_RCPbHVmmpszVMm9/view?usp=sharing)
+[![Abrir en Colab](https://img.shields.io/badge/ABRIR%20NOTEBOOK-Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1-4engxnSvRuyiOzl_RCPbHVmmpszVMm9)
 
 ### 🌐 Página web del proyecto
 
