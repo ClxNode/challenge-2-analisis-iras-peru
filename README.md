@@ -20,7 +20,7 @@
 ---
 
 ## 📌 Índice
-
+- [Cómo ejecutar](#-cómo-ejecutar)
 - [Acerca del proyecto](#-acerca-del-proyecto)
 - [El caso en cifras](#-el-caso-en-cifras)
 - [Objetivos](#-objetivos)
@@ -28,11 +28,43 @@
 - [Algoritmos de búsqueda](#-algoritmos-de-búsqueda)
 - [Modelo predictivo](#-modelo-predictivo)
 - [Tecnologías](#-tecnologías)
-- [Cómo ejecutar](#-cómo-ejecutar)
 - [Conclusiones y limitaciones](#-conclusiones-y-limitaciones)
 - [Referencias](#-referencias)
 
 ---
+## 🚀 Explora el proyecto
+
+<div align="center">
+
+### 🫁 IRAs Perú · Data Lab
+
+**Análisis epidemiológico, algoritmos de búsqueda y Machine Learning**
+
+Explora el caso de infecciones respiratorias agudas en menores de cinco años mediante datos epidemiológicos, representación de estados, estrategias de búsqueda y un modelo demostrativo de regresión lineal.
+
+<br/>
+
+<a href="https://clxnode.github.io/challenge-2-analisis-iras-peru/">
+  <img src="https://img.shields.io/badge/🌐_EXPLORAR_P%C3%81GINA_WEB-167DAD?style=for-the-badge&logoColor=white" alt="Explorar página web"/>
+</a>
+
+<a href="https://colab.research.google.com/drive/1-4engxnSvRuyiOzl_RCPbHVmmpszVMm9">
+  <img src="https://img.shields.io/badge/▶_ABRIR_NOTEBOOK_EN_COLAB-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Abrir notebook en Google Colab"/>
+</a>
+
+<br/><br/>
+
+| 📊 Análisis de datos | 🔎 Búsqueda inteligente | 🧠 Machine Learning |
+|:---:|:---:|:---:|
+| Indicadores 2023–2025 | BFS · DFS · Fuerza bruta · A* | Regresión lineal |
+| Comparación descriptiva | Espacio de estados | Entrenamiento y evaluación |
+
+</div>
+
+> **Para revisar el trabajo:** visita primero la página web para conocer la estructura del proyecto y luego abre el notebook en Google Colab para examinar el código, ejecutar los algoritmos y revisar los resultados. La regresión utiliza datos sintéticos y no constituye un pronóstico epidemiológico real.
+
+---
+
 
 ## 🔎 Acerca del proyecto
 
@@ -205,24 +237,6 @@ La ejecución guardada del notebook, con 27 meses sintéticos para entrenamiento
 | **Tailwind CSS** | Estilos de la interfaz. |
 | **GitHub Pages + Actions** | Publicación y despliegue de la web. |
 
----
-
-
-## ▶️ Explora el proyecto
-
-### 💻 Notebook en Google Colab
-
-Accede al notebook para revisar el código, ejecutar los algoritmos de búsqueda, entrenar el modelo de regresión lineal y analizar los resultados obtenidos.
-
-[![Abrir en Colab](https://img.shields.io/badge/ABRIR%20NOTEBOOK-Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1-4engxnSvRuyiOzl_RCPbHVmmpszVMm9)
-
-### 🌐 Página web del proyecto
-
-Visita la página web para conocer con mayor detalle el problema, los objetivos, el espacio de estados, los algoritmos de búsqueda, el modelo predictivo y las conclusiones del proyecto.
-
-[![Ver página web](https://img.shields.io/badge/EXPLORAR%20PROYECTO-GitHub%20Pages-167DAD?style=for-the-badge&logo=github&logoColor=white)](https://clxnode.github.io/challenge-2-analisis-iras-peru/)
-
----
 
 ## ✅ Conclusiones y limitaciones
 
