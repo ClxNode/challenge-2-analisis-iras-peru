@@ -143,18 +143,18 @@ Los costos utilizados en el ejercicio son **didácticos** y no representan costo
 
 ### Resultados de la búsqueda
 
-Los resultados deben obtenerse al ejecutar el notebook. Registra aquí las salidas reales de cada algoritmo; no completes la tabla con valores estimados.
+La tabla resume las salidas guardadas del notebook; los algoritmos también pueden ejecutarse de nuevo desde Colab.
 
 
-| Algoritmo | Camino encontrado | Costo total | Resultado de exploración |
+| Algoritmo | Camino / resultado | Transiciones o costo | Resultado de exploración |
 |:--|:--|--:|:--|
-| BFS | Episodios IRA → Integración → Resumen | 4 | 6 estados explorados |
-| DFS | Episodios IRA → Integración → Resumen | 4 | 4 estados explorados |
-| Fuerza bruta | Evalúa las 3 rutas posibles | 4 (mínimo) | 3 rutas enumeradas |
-| A* | Defunciones → Integración → Resumen | 4 | 4 estados explorados |
+| BFS | Episodios IRA → Integración → Resumen | 3 transiciones | 6 estados explorados |
+| DFS | Episodios IRA → Integración → Resumen | 3 transiciones | 4 estados explorados |
+| Fuerza bruta | Enumera rutas por episodios, defunciones y brechas | 3 transiciones por ruta | 3 rutas simples enumeradas |
+| A* | Defunciones → Integración → Resumen | 4 unidades didácticas | 4 estados explorados |
 
 
-**Interpretación:** compara los caminos, costos y nodos explorados según las condiciones de tu grafo. No declares un algoritmo como ganador sin considerar los costos, las restricciones y el criterio de comparación.
+Las rutas y conteos corresponden a las salidas guardadas del notebook. BFS y DFS devuelven la misma ruta en la implementación actual por el orden de los vecinos; cambiarlo puede cambiar la salida de DFS. Fuerza bruta enumera rutas y no calcula costos. A* usa los costos didácticos definidos en el código. No declares un algoritmo ganador sin considerar el criterio de comparación.
 
 ---
 
@@ -186,7 +186,7 @@ flowchart LR
 | **RMSE** | Raíz del error cuadrático medio. | Penaliza relativamente más los errores grandes. |
 | **R²** | Desempeño respecto a una referencia basada en la media. | Puede ser negativo si el modelo rinde peor que dicha referencia. |
 
-Añade a esta sección los valores de MAE, RMSE y R² obtenidos en la ejecución actual del notebook, junto con el gráfico generado. Las métricas describen el comportamiento del modelo sobre la serie utilizada; por sí solas no demuestran capacidad predictiva sobre casos reales.
+La ejecución guardada del notebook, con 27 meses sintéticos para entrenamiento y los últimos 9 para prueba, obtuvo **MAE = 1.40**, **RMSE = 1.75** y **R² = 0.602** (redondeados como imprime el código). Las métricas describen el comportamiento sobre esa serie sintética; no demuestran capacidad predictiva sobre casos reales. Si cambian el código o la semilla, actualiza estos valores al volver a ejecutar el notebook.
 
 > **Limitación principal:** la serie es sintética. El modelo no predice casos reales de IRA ni defunciones por neumonía en el Perú. Para estudiar capacidad predictiva epidemiológica se necesitan datos observados, una fuente documentada y una validación adecuada con datos independientes.
 
@@ -234,6 +234,22 @@ Visita la página web para conocer con mayor detalle el problema, los objetivos,
 - Los costos y las transiciones del grafo son didácticos; no representan un protocolo ni costos sanitarios reales.
 
 > **Idea clave:** todo resultado computacional debe interpretarse de acuerdo con los datos, los supuestos y el método que lo sustentan.
+
+## 🧾 Revisión de los cuatro criterios de la rúbrica
+
+| Criterio | Evidencia en el proyecto | Alcance / pendiente |
+|:--|:--|:--|
+| **Presentación del problema** | El notebook plantea la pregunta, justifica búsqueda y regresión, y transcribe los indicadores de la infografía. | La fuente original está descrita como material proporcionado; el repositorio no contiene la entidad emisora ni un enlace verificable. |
+| **Espacio de estados** | Define estados inicial y objetivo, operadores, restricciones, grafo y criterio de solución. | Representa rutas analíticas del trabajo, no un proceso clínico o sanitario. |
+| **Algoritmos de búsqueda** | Implementa BFS, DFS, fuerza bruta, A* con costos y heurística, y Hill Climbing como demostración separada. | Los costos son didácticos; los resultados dependen del grafo y del orden de vecinos. |
+| **Modelo predictivo** | Ajusta regresión lineal supervisada con 36 registros sintéticos, partición temporal 27/9, gráfico y métricas MAE/RMSE/R². | No es un modelo epidemiológico ni un pronóstico real. |
+
+### Consistencia entre README y notebook
+
+- El README anterior asignaba costo 4 a BFS, DFS y fuerza bruta. En el código, el costo solo se calcula para A*; BFS y DFS informan transiciones y estados explorados, mientras fuerza bruta enumera tres rutas.
+- La salida guardada de DFS sí es la ruta por episodios, con 4 estados explorados; no se debe describir como la ruta por brechas.
+- Las métricas documentadas ahora coinciden con la salida guardada del notebook: MAE 1.40, RMSE 1.75 y R² 0.602.
+- La interfaz se identificó como **Challenge 2** para coincidir con el README y el notebook; su portada decía Challenge 1.
 
 ---
 

@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Presentación interactiva (WorksWheel) del Challenge 1 UPCH: IRAs en menores de cinco años, búsqueda y regresión lineal.",
+  "description": "Presentación interactiva (WorksWheel) del Challenge 2 UPCH: IRAs en menores de cinco años, búsqueda y regresión lineal.",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
