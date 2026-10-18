@@ -1,10 +1,10 @@
-<div align="center">
+ <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:071A36,45:124B8A,100:42D6D0&height=210&section=header&text=IRAs%20PER%C3%9A&fontSize=62&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=AN%C3%81LISIS%20%7C%20B%C3%9ASQUEDA%20%7C%20MACHINE%20LEARNING&descSize=14&descAlignY=60" width="100%" alt="IRAs Perú — Data Lab"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:071A36,45:124B8A,100:42D6D0&height=210&section=header&text=IRAs%20PER%C3%9A&fontSize=62&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=AN%C3%81LISIS%20%7C%20B%C3%9ASQUEDA%20%7C%20MACHINE%20LEARNING&descSize=14&descAlignY=60" width="100%" alt="IRAs Perú — Análisis de datos y Machine Learning"/>
 
-# 🫁 Análisis de IRAs en menores de 5 años
+# Análisis de IRAs en menores de 5 años
 
-**Challenge 2 · Fundamentos de Machine Learning · UPCH**
+**Challenge 2 · Fundamentos de Machine Learning · Universidad Peruana Cayetano Heredia**
 
 <p>
   <img src="https://img.shields.io/badge/CHALLENGE-02-2563EB?style=for-the-badge&labelColor=071A36" alt="Challenge 2"/>
@@ -13,125 +13,120 @@
   <img src="https://img.shields.io/badge/ML-REGRESI%C3%93N%20LINEAL-0F8BBA?style=for-the-badge" alt="Regresión lineal"/>
 </p>
 
-*Un recorrido por los datos epidemiológicos, los algoritmos de búsqueda y una demostración de aprendizaje supervisado.*
+Análisis de indicadores epidemiológicos, exploración de espacios de estados y aplicación de algoritmos de búsqueda y regresión lineal a un caso de salud pública.
 
 </div>
 
 ---
 
-## 📌 Índice
-- [Cómo ejecutar](#-cómo-ejecutar)
-- [Acerca del proyecto](#-acerca-del-proyecto)
-- [El caso en cifras](#-el-caso-en-cifras)
-- [Objetivos](#-objetivos)
-- [Espacio de estados](#-espacio-de-estados)
-- [Algoritmos de búsqueda](#-algoritmos-de-búsqueda)
-- [Modelo predictivo](#-modelo-predictivo)
-- [Tecnologías](#-tecnologías)
-- [Conclusiones y limitaciones](#-conclusiones-y-limitaciones)
-- [Referencias](#-referencias)
+## Acceso al proyecto
 
----
-## 🚀 Explora el proyecto
+Este repositorio reúne la documentación, la implementación de los algoritmos y una página web para presentar los resultados del análisis. Puedes revisar el proyecto desde los siguientes enlaces.
 
 <div align="center">
 
-### 🫁 IRAs Perú · Data Lab
-
-**Análisis epidemiológico, algoritmos de búsqueda y Machine Learning**
-
-Explora el caso de infecciones respiratorias agudas en menores de cinco años mediante datos epidemiológicos, representación de estados, estrategias de búsqueda y un modelo demostrativo de regresión lineal.
-
-<br/>
-
 <a href="https://clxnode.github.io/challenge-2-analisis-iras-peru/">
-  <img src="https://img.shields.io/badge/🌐_EXPLORAR_P%C3%81GINA_WEB-167DAD?style=for-the-badge&logoColor=white" alt="Explorar página web"/>
+  <img src="https://img.shields.io/badge/EXPLORAR_P%C3%81GINA_WEB-167DAD?style=for-the-badge&logo=github&logoColor=white" alt="Explorar página web"/>
 </a>
 
 <a href="https://colab.research.google.com/drive/1-4engxnSvRuyiOzl_RCPbHVmmpszVMm9">
-  <img src="https://img.shields.io/badge/▶_ABRIR_NOTEBOOK_EN_COLAB-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Abrir notebook en Google Colab"/>
+  <img src="https://img.shields.io/badge/ABRIR_NOTEBOOK_EN_COLAB-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Abrir notebook en Google Colab"/>
 </a>
-
-<br/><br/>
-
-| 📊 Análisis de datos | 🔎 Búsqueda inteligente | 🧠 Machine Learning |
-|:---:|:---:|:---:|
-| Indicadores 2023–2025 | BFS · DFS · Fuerza bruta · A* | Regresión lineal |
-| Comparación descriptiva | Espacio de estados | Entrenamiento y evaluación |
 
 </div>
 
-> **Para revisar el trabajo:** visita primero la página web para conocer la estructura del proyecto y luego abre el notebook en Google Colab para examinar el código, ejecutar los algoritmos y revisar los resultados. La regresión utiliza datos sintéticos y no constituye un pronóstico epidemiológico real.
+| Recurso | Contenido |
+|---|---|
+| Página web | Presentación del problema, espacio de estados, algoritmos de búsqueda, modelo predictivo y conclusiones. |
+| Notebook de Google Colab | Código Python, ejecución de los algoritmos, entrenamiento de la regresión lineal y evaluación de resultados. |
 
 ---
 
+## Índice
 
-## 🔎 Acerca del proyecto
+- [Acerca del proyecto](#acerca-del-proyecto)
+- [El caso en cifras](#el-caso-en-cifras)
+- [Objetivos](#objetivos)
+- [Espacio de estados](#espacio-de-estados)
+- [Algoritmos de búsqueda](#algoritmos-de-búsqueda)
+- [Modelo predictivo](#modelo-predictivo)
+- [Tecnologías](#tecnologías)
+- [Conclusiones y limitaciones](#conclusiones-y-limitaciones)
+- [Revisión de los criterios de la rúbrica](#revisión-de-los-criterios-de-la-rúbrica)
+- [Referencias](#referencias)
 
-Este proyecto académico explora el caso de las **Infecciones Respiratorias Agudas (IRAs) en menores de cinco años en el Perú** mediante tres componentes:
+---
 
-| Componente | ¿Qué se realiza? |
-|:--|:--|
-| 📊 **Análisis descriptivo** | Comparación de episodios de IRA y defunciones por neumonía entre 2023 y 2025. |
-| 🧭 **Búsqueda** | Representación de un problema mediante un espacio de estados y comparación de algoritmos. |
-| 🧠 **Machine Learning** | Demostración del flujo de regresión lineal con una serie de datos sintéticos. |
+## Acerca del proyecto
+
+Este proyecto académico aborda el caso de las **infecciones respiratorias agudas (IRAs) en menores de cinco años en el Perú**. A partir de la información epidemiológica proporcionada para el trabajo, se desarrolla un análisis descriptivo y se aplican conceptos de búsqueda y aprendizaje automático.
+
+El trabajo se organiza en tres componentes:
+
+| Componente | Desarrollo |
+|---|---|
+| Análisis descriptivo | Comparación de episodios de IRA y defunciones por neumonía entre 2023 y 2025. |
+| Algoritmos de búsqueda | Definición de un espacio de estados y comparación de distintas estrategias de exploración. |
+| Machine Learning | Entrenamiento y evaluación de una regresión lineal con una serie de datos sintéticos. |
 
 ### Pregunta orientadora
 
-> ¿Cómo podemos explorar un caso de salud pública mediante datos y métodos computacionales?
+¿Cómo podemos analizar un caso de salud pública mediante datos y métodos computacionales, considerando las posibilidades y limitaciones de cada técnica?
 
-El análisis descriptivo, los algoritmos de búsqueda y el modelo predictivo tienen propósitos distintos. Se presentan como ejercicios académicos y **no constituyen un sistema clínico ni un modelo epidemiológico validado**.
+Los tres componentes tienen propósitos diferentes. El ejercicio de búsqueda permite estudiar el recorrido por un grafo, mientras que la regresión lineal demuestra un proceso básico de aprendizaje supervisado. Ninguno constituye un sistema clínico ni un modelo epidemiológico validado.
 
 ---
 
-## 📊 El caso en cifras
+## El caso en cifras
 
-Las siguientes cifras corresponden a la infografía proporcionada para el caso académico.
+Los siguientes valores se transcriben de la infografía proporcionada para el caso académico.
 
 | Indicador | 2023 | 2024 | 2025 |
-|:--|--:|--:|--:|
+|---|---:|---:|---:|
 | Episodios de IRA | 1 003 178 | 883 959 | 824 978 |
 | Defunciones por neumonía | 113 | 82 | 51 |
 
-### ¿Qué muestran los datos?
+### Interpretación descriptiva
 
-- Los episodios de IRA disminuyen en los tres años presentados.
-- Las defunciones por neumonía también disminuyen durante el periodo.
-- Esta comparación describe una variación temporal, pero **no permite identificar sus causas ni demostrar el efecto de una intervención**.
+- Los episodios de IRA disminuyen durante los tres años presentados.
+- Las defunciones por neumonía también muestran una reducción en el periodo analizado.
+- Estos datos permiten describir una variación temporal, pero no identificar sus causas ni demostrar que una intervención específica haya producido esos cambios.
+
+Las cifras se utilizan como contexto del problema y no como conjunto de entrenamiento del modelo predictivo.
 
 ---
 
-## 🎯 Objetivos
+## Objetivos
 
 ### Objetivo general
 
-Explorar el caso de las IRAs en menores de cinco años mediante visualización de datos, algoritmos de búsqueda y una demostración de regresión lineal, identificando los alcances y las limitaciones de cada técnica.
+Analizar el caso de las IRAs en menores de cinco años mediante herramientas de análisis de datos, algoritmos de búsqueda y una demostración de regresión lineal, identificando los alcances y las limitaciones de cada técnica.
 
 ### Objetivos específicos
 
 1. Comparar los indicadores epidemiológicos disponibles para 2023, 2024 y 2025.
 2. Representar un problema mediante estados, transiciones, operadores y restricciones.
 3. Implementar y comparar BFS, DFS, fuerza bruta y A*.
-4. Demostrar Hill Climbing como método independiente de optimización local.
-5. Entrenar y evaluar una regresión lineal con una serie sintética.
-6. Interpretar los resultados y distinguir las demostraciones computacionales de las conclusiones epidemiológicas.
+4. Mostrar el funcionamiento de Hill Climbing mediante un ejemplo independiente.
+5. Entrenar y evaluar una regresión lineal con datos sintéticos.
+6. Interpretar los resultados sin confundir las demostraciones computacionales con conclusiones epidemiológicas.
 
 ---
 
-## 🕸️ Espacio de estados
+## Espacio de estados
 
-El espacio de estados representa las etapas computacionales del análisis. Cada nodo describe una situación del proceso y cada transición representa una operación permitida. **No representa la evolución clínica de una infección ni un protocolo sanitario.**
+El espacio de estados representa las etapas computacionales del análisis. Cada nodo describe una situación del proceso y cada transición representa una operación permitida. No representa la evolución clínica de una infección ni un protocolo sanitario.
 
 ### Definición del problema
 
 | Elemento | Descripción |
-|:--|:--|
-| **Estado inicial** | Cifras epidemiológicas disponibles en el material del caso. |
-| **Estados intermedios** | Información organizada, indicadores calculados y cifras comparadas. |
-| **Estado objetivo** | Obtener una comparación descriptiva de los indicadores de 2023, 2024 y 2025. |
-| **Operadores** | Organizar datos, calcular variaciones, comparar indicadores y generar visualizaciones. |
-| **Restricciones** | Conservar las unidades, utilizar solo los datos disponibles y evitar inferencias causales. |
-| **Criterio de finalización** | Los indicadores están comparados y las limitaciones del análisis están documentadas. |
+|---|---|
+| Estado inicial | Cifras epidemiológicas disponibles en el material del caso. |
+| Estados intermedios | Información organizada, indicadores calculados y cifras comparadas. |
+| Estado objetivo | Obtener una comparación descriptiva de los indicadores de 2023, 2024 y 2025. |
+| Operadores | Organizar datos, calcular variaciones, comparar indicadores y generar visualizaciones. |
+| Restricciones | Conservar las unidades, utilizar los datos disponibles y evitar inferencias causales. |
+| Criterio de finalización | Los indicadores están comparados y las limitaciones del análisis están documentadas. |
 
 ### Flujo conceptual
 
@@ -155,44 +150,46 @@ flowchart TD
     class R review;
 ```
 
-> **Nota:** este flujo conceptual describe el proceso de análisis. El grafo específico que recorren los algoritmos debe revisarse en el notebook, junto con sus transiciones y costos.
+Este diagrama resume el proceso conceptual de análisis. El grafo específico utilizado por los algoritmos se encuentra desarrollado en el notebook, donde se definen las transiciones y los costos didácticos.
 
 ---
 
-## 🔍 Algoritmos de búsqueda
+## Algoritmos de búsqueda
 
-El proyecto aborda distintas estrategias de exploración para estudiar cómo se recorre un espacio de estados.
+El proyecto implementa distintas estrategias para explorar un espacio de estados y observar cómo cambia el recorrido según el algoritmo utilizado.
 
-| Algoritmo | Estrategia | ¿Qué permite observar? |
-|:--|:--|:--|
-| **BFS** | Explora por niveles. | Encuentra un camino con el menor número de aristas cuando todas tienen el mismo costo. |
-| **DFS** | Profundiza en una rama antes de retroceder. | Permite observar una exploración en profundidad. |
-| **Fuerza bruta** | Examina las alternativas definidas. | Puede servir como referencia si la exploración es exhaustiva. |
-| **A\*** | Combina costo acumulado y heurística. | Prioriza estados según el costo y la heurística implementados. |
-| **Hill Climbing** | Mejora local iterativa. | Ilustra la búsqueda de mejoras a partir de una solución actual. |
+| Algoritmo | Estrategia | Característica principal |
+|---|---|---|
+| BFS | Búsqueda en anchura | Explora por niveles y encuentra una ruta con el menor número de aristas en un grafo no ponderado. |
+| DFS | Búsqueda en profundidad | Explora una rama antes de retroceder; el resultado depende del orden de los vecinos. |
+| Fuerza bruta | Exploración exhaustiva | Enumera las rutas simples definidas en el grafo. |
+| A* | Búsqueda informada | Prioriza estados mediante el costo acumulado y una heurística. |
+| Hill Climbing | Optimización local | Mejora una solución mediante cambios sucesivos que favorecen la función objetivo. |
 
-Los costos utilizados en el ejercicio son **didácticos** y no representan costos sanitarios reales. Hill Climbing se presenta como una demostración independiente de optimización local.
+Los costos utilizados son didácticos y no representan costos sanitarios reales. Hill Climbing se presenta como una demostración independiente de optimización local.
 
 ### Resultados de la búsqueda
 
-La tabla resume las salidas guardadas del notebook; los algoritmos también pueden ejecutarse de nuevo desde Colab.
+La siguiente tabla resume los resultados documentados en la ejecución del notebook.
 
-
-| Algoritmo | Camino / resultado | Transiciones o costo | Resultado de exploración |
-|:--|:--|--:|:--|
+| Algoritmo | Camino o resultado | Transiciones o costo | Resultado de exploración |
+|---|---|---:|---|
 | BFS | Episodios IRA → Integración → Resumen | 3 transiciones | 6 estados explorados |
 | DFS | Episodios IRA → Integración → Resumen | 3 transiciones | 4 estados explorados |
 | Fuerza bruta | Enumera rutas por episodios, defunciones y brechas | 3 transiciones por ruta | 3 rutas simples enumeradas |
 | A* | Defunciones → Integración → Resumen | 4 unidades didácticas | 4 estados explorados |
 
+BFS y DFS pueden devolver la misma ruta cuando se utiliza el orden de vecinos definido en la implementación actual. La salida de DFS puede cambiar si se modifica ese orden. Fuerza bruta enumera las rutas definidas y no calcula costos, mientras que A* utiliza los costos didácticos establecidos en el código.
 
-Las rutas y conteos corresponden a las salidas guardadas del notebook. BFS y DFS devuelven la misma ruta en la implementación actual por el orden de los vecinos; cambiarlo puede cambiar la salida de DFS. Fuerza bruta enumera rutas y no calcula costos. A* usa los costos didácticos definidos en el código. No declares un algoritmo ganador sin considerar el criterio de comparación.
+Por ello, la comparación debe considerar el criterio utilizado por cada algoritmo y no declarar un ganador sin una métrica común.
 
 ---
 
-## 🧠 Modelo predictivo
+## Modelo predictivo
 
 La regresión lineal se utiliza para demostrar el flujo básico del aprendizaje supervisado: preparación de datos, entrenamiento, predicción y evaluación.
+
+### Flujo del modelo
 
 ```mermaid
 flowchart LR
@@ -210,66 +207,87 @@ flowchart LR
     class D,E,F result;
 ```
 
+### Preparación de los datos
+
+La serie utilizada contiene 36 registros sintéticos. Se emplean los primeros 27 meses para entrenar el modelo y los últimos 9 para evaluar sus predicciones.
+
+Los valores son artificiales y se generan con fines académicos. La tendencia descendente se inspira únicamente en la dirección general de las cifras de la infografía; no corresponde a una serie mensual oficial de IRAs.
+
 ### Métricas de evaluación
 
-| Métrica | ¿Qué mide? | Interpretación general |
-|:--|:--|:--|
-| **MAE** | Promedio del error absoluto. | Menor valor significa menor error absoluto medio en la escala de la variable objetivo. |
-| **RMSE** | Raíz del error cuadrático medio. | Penaliza relativamente más los errores grandes. |
-| **R²** | Desempeño respecto a una referencia basada en la media. | Puede ser negativo si el modelo rinde peor que dicha referencia. |
+| Métrica | ¿Qué mide? | Interpretación |
+|---|---|---|
+| MAE | Promedio del error absoluto. | Indica cuánto se desvían, en promedio, las estimaciones respecto a los valores observados. |
+| RMSE | Raíz del error cuadrático medio. | Da relativamente más peso a los errores grandes. |
+| R² | Desempeño respecto a una referencia basada en la media. | Permite comparar el ajuste del modelo con esa referencia en el conjunto evaluado. |
 
-La ejecución guardada del notebook, con 27 meses sintéticos para entrenamiento y los últimos 9 para prueba, obtuvo **MAE = 1.40**, **RMSE = 1.75** y **R² = 0.602** (redondeados como imprime el código). Las métricas describen el comportamiento sobre esa serie sintética; no demuestran capacidad predictiva sobre casos reales. Si cambian el código o la semilla, actualiza estos valores al volver a ejecutar el notebook.
+La ejecución documentada del notebook obtuvo los siguientes resultados:
 
-> **Limitación principal:** la serie es sintética. El modelo no predice casos reales de IRA ni defunciones por neumonía en el Perú. Para estudiar capacidad predictiva epidemiológica se necesitan datos observados, una fuente documentada y una validación adecuada con datos independientes.
+| Métrica | Resultado |
+|---|---:|
+| MAE | 1.40 |
+| RMSE | 1.75 |
+| R² | 0.602 |
+
+Estas métricas describen únicamente el comportamiento de la regresión sobre la serie sintética utilizada. No representan la precisión de un pronóstico sanitario ni demuestran capacidad predictiva sobre casos reales.
+
+### Interpretación y limitaciones
+
+La pendiente negativa de la recta representa una disminución en la variable sintética a medida que avanza el índice temporal. No debe interpretarse como una tasa observada de reducción de las IRAs.
+
+Para desarrollar y evaluar un modelo epidemiológico sería necesario contar con datos reales, suficientes y documentados, además de una estrategia de validación independiente.
 
 ---
 
-## 🧰 Tecnologías
+## Tecnologías
 
 | Herramienta | Uso |
-|:--|:--|
-| **Python + Google Colab** | Desarrollo y ejecución del notebook. |
-| **NumPy** | Operaciones numéricas y datos sintéticos. |
-| **scikit-learn** | Regresión lineal y métricas de evaluación. |
-| **Matplotlib** | Gráficos y visualización de resultados. |
-| **NetworkX** | Representación y análisis de grafos. |
-| **React + TypeScript + Vite** | Interfaz web del proyecto. |
-| **Tailwind CSS** | Estilos de la interfaz. |
-| **GitHub Pages + Actions** | Publicación y despliegue de la web. |
-
-
-## ✅ Conclusiones y limitaciones
-
-- Las cifras disponibles muestran una disminución de los episodios de IRA y las defunciones por neumonía entre 2023 y 2025.
-- La comparación descriptiva no identifica las causas de esas variaciones.
-- Los algoritmos de búsqueda permiten estudiar distintas estrategias de exploración de estados.
-- Hill Climbing ilustra una estrategia independiente de optimización local.
-- La regresión lineal demuestra el flujo de entrenamiento y evaluación sobre datos sintéticos.
-- Los costos y las transiciones del grafo son didácticos; no representan un protocolo ni costos sanitarios reales.
-
-> **Idea clave:** todo resultado computacional debe interpretarse de acuerdo con los datos, los supuestos y el método que lo sustentan.
-
-## 🧾 Revisión de los cuatro criterios de la rúbrica
-
-| Criterio | Evidencia en el proyecto | Alcance / pendiente |
-|:--|:--|:--|
-| **Presentación del problema** | El notebook plantea la pregunta, justifica búsqueda y regresión, y transcribe los indicadores de la infografía. | La fuente original está descrita como material proporcionado; el repositorio no contiene la entidad emisora ni un enlace verificable. |
-| **Espacio de estados** | Define estados inicial y objetivo, operadores, restricciones, grafo y criterio de solución. | Representa rutas analíticas del trabajo, no un proceso clínico o sanitario. |
-| **Algoritmos de búsqueda** | Implementa BFS, DFS, fuerza bruta, A* con costos y heurística, y Hill Climbing como demostración separada. | Los costos son didácticos; los resultados dependen del grafo y del orden de vecinos. |
-| **Modelo predictivo** | Ajusta regresión lineal supervisada con 36 registros sintéticos, partición temporal 27/9, gráfico y métricas MAE/RMSE/R². | No es un modelo epidemiológico ni un pronóstico real. |
-
-### Consistencia entre README y notebook
-
-- El README anterior asignaba costo 4 a BFS, DFS y fuerza bruta. En el código, el costo solo se calcula para A*; BFS y DFS informan transiciones y estados explorados, mientras fuerza bruta enumera tres rutas.
-- La salida guardada de DFS sí es la ruta por episodios, con 4 estados explorados; no se debe describir como la ruta por brechas.
-- Las métricas documentadas ahora coinciden con la salida guardada del notebook: MAE 1.40, RMSE 1.75 y R² 0.602.
-- La interfaz se identificó como **Challenge 2** para coincidir con el README y el notebook; su portada decía Challenge 1.
+|---|---|
+| Python y Google Colab | Desarrollo y ejecución del notebook. |
+| NumPy | Operaciones numéricas y generación de datos sintéticos. |
+| scikit-learn | Regresión lineal y métricas de evaluación. |
+| Matplotlib | Gráficos y visualización de resultados. |
+| NetworkX | Representación y análisis de grafos. |
+| React, TypeScript y Vite | Desarrollo de la interfaz web. |
+| Tailwind CSS | Estilos de la interfaz. |
+| GitHub Pages y GitHub Actions | Publicación y despliegue de la página web. |
 
 ---
 
-## 📚 Referencias
+## Conclusiones y limitaciones
 
-1. **Material del caso:** infografía de IRAs proporcionada para el trabajo académico. Completar con el título exacto, entidad responsable y enlace original si aparecen en el documento.
+- Las cifras disponibles muestran una disminución de los episodios de IRA y las defunciones por neumonía entre 2023 y 2025.
+- La comparación descriptiva no permite identificar las causas de esas variaciones.
+- Los algoritmos de búsqueda permiten estudiar distintas estrategias de exploración de estados.
+- Hill Climbing muestra el funcionamiento de una estrategia independiente de optimización local.
+- La regresión lineal permite demostrar las etapas de entrenamiento, predicción y evaluación utilizando datos sintéticos.
+- Los costos y las transiciones del grafo son didácticos; no representan un protocolo ni costos sanitarios reales.
+
+Los resultados deben interpretarse de acuerdo con los datos disponibles, los supuestos utilizados y el método aplicado.
+
+---
+
+## Revisión de los criterios de la rúbrica
+
+| Criterio | Evidencia en el proyecto | Alcance o pendiente |
+|---|---|---|
+| Presentación del problema | El notebook plantea la pregunta, justifica el uso de búsqueda y regresión y presenta los indicadores de la infografía. | Completar la referencia original de la fuente epidemiológica si se dispone de ella. |
+| Espacio de estados | Define estados inicial y objetivo, operadores, restricciones y representación gráfica. | El modelo representa un proceso de análisis, no un proceso clínico. |
+| Algoritmos de búsqueda | Implementa BFS, DFS, fuerza bruta, A* y una demostración independiente de Hill Climbing. | Los costos son didácticos y las rutas dependen de la implementación. |
+| Modelo predictivo | Desarrolla regresión lineal con 36 registros sintéticos, partición temporal 27/9, visualización y métricas. | No constituye un modelo epidemiológico ni un pronóstico real. |
+
+### Consistencia entre la documentación y el notebook
+
+- BFS y DFS informan transiciones y estados explorados; el costo didáctico se utiliza para A*.
+- Fuerza bruta enumera tres rutas simples y no calcula costos.
+- Los resultados de la búsqueda deben coincidir con las salidas del notebook.
+- Las métricas del modelo deben actualizarse si cambia el código, la semilla o la ejecución.
+
+---
+
+## Referencias
+
+1. **Material del caso:** infografía de IRAs proporcionada para el trabajo académico. Completar con el título exacto, la entidad responsable y el enlace original si están disponibles.
 2. **Materiales de clase de la UPCH:** sesiones 3–7 sobre búsqueda, tipos de aprendizaje y regresión.
 3. [Google Colab](https://colab.research.google.com/) — entorno para ejecutar notebooks.
 4. [Documentación de scikit-learn](https://scikit-learn.org/stable/) — modelos y métricas de Machine Learning.
@@ -281,7 +299,8 @@ La ejecución guardada del notebook, con 27 meses sintéticos para entrenamiento
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:071A36,45:124B8A,100:42D6D0&height=115&section=footer" width="100%" alt="Cierre IRAs Perú"/>
 
-**IRAs Perú · Data Lab**  
+**IRAs Perú · Data Lab**
+
 *Challenge 2 · Fundamentos de Machine Learning · Universidad Peruana Cayetano Heredia*
 
 <sub>Proyecto académico. Las cifras epidemiológicas proceden del material del caso y los datos sintéticos se identifican como tales.</sub>
