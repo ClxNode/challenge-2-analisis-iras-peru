@@ -4,7 +4,7 @@ export function Inicio() {
   return (
     <div className="space-y-8">
       <div>
-        <p className="text-accent text-sm font-semibold tracking-widest uppercase">Challenge 1 · Pipeline de Machine Learning · Tipo B</p>
+        <p className="text-accent text-sm font-semibold tracking-widest uppercase">Challenge 2 · Pipeline de Machine Learning · Tipo B</p>
         <h2 className="text-primary mt-3 text-3xl leading-tight font-semibold tracking-tight sm:text-4xl">
           Análisis de las Infecciones Respiratorias Agudas en menores de cinco años en el Perú mediante algoritmos de
           búsqueda y regresión lineal

@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState, type ComponentType } from "re
 import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 
 import { WorksWheel, type WorksWheelHandle } from "@/components/ui/works-wheel";
+import { AmbientNetwork } from "@/components/AmbientNetwork";
 import { sections } from "@/data/sections";
 import { Busqueda } from "@/sections/Busqueda";
 import { Conclusiones } from "@/sections/Conclusiones";
@@ -75,9 +76,11 @@ export default function App() {
   const Vista = meta ? VISTAS[meta.slug] : null;
 
   return (
-    <div className="bg-background text-foreground relative h-screen w-full overflow-hidden">
+    <div className="bg-background text-foreground relative h-dvh w-full overflow-hidden">
+      <AmbientNetwork />
       <WorksWheel
         ref={wheel}
+        className="relative z-10 bg-transparent"
         items={sections.map((s) => ({ title: s.title, image: s.image, subtitle: s.subtitle }))}
         label="IRAs en menores de 5 años"
         hint="Desplázate, arrastra o usa las flechas para girar la rueda"
@@ -87,8 +90,8 @@ export default function App() {
       />
 
       {meta && Vista && open !== null ? (
-        <div className="animate-panel-in bg-background absolute inset-0 z-[200] flex flex-col" role="dialog" aria-modal="true" aria-label={meta.title}>
-          <header className="border-border bg-card/90 flex items-center justify-between gap-3 border-b px-4 py-3 backdrop-blur sm:px-8">
+        <div className="animate-panel-in bg-background/95 absolute inset-0 z-[200] flex flex-col backdrop-blur-xl" role="dialog" aria-modal="true" aria-label={meta.title}>
+          <header className="border-border/80 bg-card/85 flex items-center justify-between gap-3 border-b px-4 py-3 backdrop-blur-xl sm:px-8">
             <button
               type="button"
               onClick={cerrar}
@@ -124,7 +127,7 @@ export default function App() {
           <div ref={scroller} className="panel-scroll flex-1 overflow-y-auto">
             <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:px-8 lg:grid-cols-[17rem_minmax(0,1fr)] lg:gap-14 lg:py-14">
               <aside className="lg:sticky lg:top-0 lg:self-start">
-                <div className="text-muted-foreground text-sm font-semibold tabular-nums">{String(open + 1).padStart(2, "0")}</div>
+                <div className="text-accent text-sm font-semibold tracking-[0.2em] tabular-nums">SECCIÓN {String(open + 1).padStart(2, "0")}</div>
                 <h1 className="text-primary mt-1 text-3xl leading-[1.1] font-semibold tracking-tight lg:text-4xl">{meta.title}</h1>
                 <p className="text-muted-foreground mt-3 text-sm leading-snug">{meta.subtitle}</p>
                 <div className="bg-accent-soft text-primary mt-5 inline-block rounded-full px-3 py-1 text-xs font-semibold">

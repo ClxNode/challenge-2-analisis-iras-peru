@@ -13,7 +13,7 @@ export function P({ children, className }: { children: ReactNode; className?: st
 
 export function Card({ children, className }: { children: ReactNode; className?: string }) {
   return (
-    <div className={cn("border-border bg-card rounded-xl border p-5 shadow-[0_1px_0_rgba(11,31,63,0.04)]", className)}>
+    <div className={cn("science-card border-border/90 bg-card rounded-2xl border p-5 transition duration-200 hover:-translate-y-0.5 hover:border-accent/50", className)}>
       {children}
     </div>
   );

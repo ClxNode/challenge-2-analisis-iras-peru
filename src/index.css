@@ -1,22 +1,23 @@
 @import "tailwindcss";
 @import "@fontsource-variable/public-sans";
 
-/* Tokens al estilo shadcn/ui. Paleta: azul marino, azul institucional, blanco y neutros. */
+/* Sistema visual: laboratorio epidemiológico nocturno con alto contraste. */
 :root {
-  --background: #f4f7fb;
-  --foreground: #0b1f3f;
-  --card: #ffffff;
-  --card-foreground: #0b1f3f;
-  --muted: #e3ebf6;
-  --muted-foreground: #53647f;
-  --primary: #1b3a6b;
-  --primary-foreground: #ffffff;
-  --accent: #2e6db4;
-  --accent-soft: #dbe8f7;
-  --border: #cfdbec;
-  --warn: #8a5a00;
-  --warn-bg: #fff4d6;
-  --ok: #1f7a4d;
+  color-scheme: dark;
+  --background: #050d1b;
+  --foreground: #e7f2ff;
+  --card: #101e30;
+  --card-foreground: #e7f2ff;
+  --muted: #15283d;
+  --muted-foreground: #a4b7cc;
+  --primary: #69c6ff;
+  --primary-foreground: #061321;
+  --accent: #39a8ff;
+  --accent-soft: #102d48;
+  --border: #29435c;
+  --warn: #ffd48a;
+  --warn-bg: #3c2d19;
+  --ok: #73e0b0;
 }
 
 @theme inline {
@@ -56,6 +57,68 @@ body {
   overflow: hidden;
 }
 
+#root {
+  isolation: isolate;
+  position: relative;
+  background: linear-gradient(135deg, #050d1b 0%, #06152b 56%, #050d1b 100%);
+}
+
+#root::before {
+  position: absolute;
+  z-index: 0;
+  inset: -22%;
+  content: "";
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 76% 17%, rgb(20 105 219 / 34%), transparent 24%),
+    radial-gradient(ellipse at 86% 63%, rgb(11 59 120 / 24%), transparent 31%),
+    radial-gradient(ellipse at 48% 100%, rgb(11 59 120 / 14%), transparent 28%);
+  filter: blur(58px);
+  animation: ambient-glow 32s ease-in-out infinite alternate;
+}
+
+.ambient-network {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.ambient-photo {
+  position: absolute;
+  z-index: 0;
+  inset: -2%;
+  width: 104%;
+  height: 104%;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.48;
+  pointer-events: none;
+  will-change: transform;
+}
+
+@keyframes ambient-glow {
+  from { transform: translate3d(-1.5%, -1%, 0) scale(1); opacity: 0.76; }
+  to { transform: translate3d(1.5%, 1%, 0) scale(1.04); opacity: 1; }
+}
+
+::selection { background: #1479b8; color: #fff; }
+:focus-visible { outline-color: #79d4ff; }
+
+.recharts-cartesian-axis-tick-value,
+.recharts-label,
+.recharts-legend-item-text,
+.recharts-text { fill: #b6c9dc; }
+.recharts-cartesian-grid line { stroke: #29435c; }
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background-color: #101e30 !important;
+  border: 1px solid #365675 !important;
+  border-radius: 12px;
+  color: #e7f2ff;
+}
+
 /* Barra de desplazamiento discreta dentro del panel de lectura. */
 .panel-scroll {
   scrollbar-width: thin;
@@ -74,11 +137,28 @@ body {
 }
 
 .animate-panel-in {
-  animation: panel-in 420ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation: panel-in 360ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.science-card {
+  background-image: linear-gradient(145deg, rgb(73 158 224 / 6%), transparent 60%);
+  box-shadow: 0 16px 38px rgb(0 0 0 / 18%), inset 0 1px rgb(255 255 255 / 3%);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-panel-in {
+  .animate-panel-in,
+  #root::before {
     animation: none;
+  }
+
+  .ambient-photo {
+    transform: scale(1.045) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .ambient-photo {
+    background-position: 70% center;
+    opacity: 0.34;
   }
 }
